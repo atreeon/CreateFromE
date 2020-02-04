@@ -1,0 +1,6 @@
+TODO
+from annotation get all non abstract supertypes and create a create from extension method
+
+//could we create from a subclass to a superclass?
+//could we create from a sibling to another sibling?
+//Yes, all these are possible but only when necessary is it worth doing

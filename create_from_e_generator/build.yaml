@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      create_from_e_generator|create_from_e:
+        enabled: true
+ 
+builders:
+  create_from_e:
+    target: ":create_from_e_generator"
+    import: "package:create_from_e_generator/builder.dart"
+    builder_factories: ["createFromEBuilder"]
+    build_extensions: {".dart": [".x.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
