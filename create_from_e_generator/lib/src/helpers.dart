@@ -67,4 +67,4 @@ String getConstructorLines(ClassDef extType, ClassDef typeType) {
 }
 
 String getExtensionDef(String className) => //
-    "extension ${className}Ext on ${className}";
+    "extension ${className}Ext_CreateFromE on ${className}";
